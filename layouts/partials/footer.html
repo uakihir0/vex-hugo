@@ -2,8 +2,14 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-md-12">
+        <a href="{{ .Site.BaseURL }}" class="footer-logo mb-4">{{ if .Site.Params.logo }} <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"> {{ else }} {{ .Title }} {{ end }}</a>
+        <div class="text-center">
+          <span>Support:</span> <a href="https://twitter.com/SocialHub_JP"><i class="h4 tf-ion-social-twitter-outline"></i>@SocialHub_JP</a>
+        </div>
+        <div class="mb-40 text-center">
+          <span>Developper:</span> <a href="https://twitter.com/uakihir0"><i class="h4 tf-ion-social-twitter-outline"></i>@uakihir0</a>
+        </div>
         <div class="block">
-          <a href="{{ .Site.BaseURL }}" class="footer-logo mb-4">{{ if .Site.Params.logo }} <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"> {{ else }} {{ .Title }} {{ end }}</a>
           <ul class="list-inline footer-menu">
             <li class="list-inline-item">
               <a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>

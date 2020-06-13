@@ -527,4 +527,8 @@ footer p.copyright-text a:hover {
   text-decoration: none;
 }
 
+footer span {
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
